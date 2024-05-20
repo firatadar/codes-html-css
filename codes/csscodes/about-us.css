@@ -1,0 +1,133 @@
+#button1{
+    background-color: aqua;
+    width:100px  ; height: 30px;
+    border:1px solid ; border-radius:10px ;
+    font-size: large;
+    font-style: italic;
+    
+}
+.alan{
+ display: flex;
+    background-color: gold;
+}
+.solalan{
+     flex:1;
+    
+} 
+#bir{
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+#iki{
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 20px;
+}
+#uc{
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 20px;
+}
+#dort{
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 20px;
+}
+#g1{
+    background-color: yellow;
+    text-align: center;
+    border: 1px solid black;
+    color: orange;
+    border-radius: 100px;
+    width: 200px;
+    height: 50px;
+    
+}
+#g2{
+    background-color: blue  ;
+    text-align: center;
+    border: 1px solid black;
+    color: grey;
+    border-radius: 100px;
+    width: 200px;
+    height: 50px;
+}
+#g3{
+    background-color: purple;
+    text-align: center;
+    border: 1px solid black;
+    color: aqua;
+    border-radius: 100px;
+    width: 200px;
+    height: 50px;
+     
+   
+}
+#g4{
+    background-color: red;
+    text-align: center;
+    border: 1px solid black;
+    color: pink;
+    border-radius: 100px;
+    width: 200px;
+    height: 50px;
+}
+
+
+#g1:hover{
+    background-color:aqua
+}
+#g2:hover{
+    background-color:pink
+}
+#g3:hover{
+    background-color:red
+}
+#g4:hover{
+    background-color:purple
+}
+.sagalan{
+    flex:1;
+    
+
+}
+
+#im1{
+    
+       width: 30%; 
+        height: 150px; 
+        display: block;
+        margin-bottom: 10px;
+
+      
+}
+#im2{
+    width: 30%; 
+    height: 150px; 
+    display: block;
+    margin-bottom: 10px;
+}
+#im3{
+    width: 30%; 
+    height: 150px; 
+    display: block;
+    margin-bottom: 10px;
+}
+
+   
+#im4{
+    width: 30%; 
+    height: 150px; 
+    display: block;
+    margin-bottom: 10px;
+}

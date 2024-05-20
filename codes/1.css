@@ -1,0 +1,60 @@
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.image-container {
+  width: 300px; 
+  height: 300px; 
+  position: relative;
+}
+
+.image-animation {
+  width: 100%; 
+  height: 100%; 
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  background-image: url('/image/noteis.png');
+  background-size: cover;
+  animation: slide 5s linear infinite; 
+  z-index: -1;
+}
+
+ul {
+  padding: 0;
+  margin: 0%;
+  list-style: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul#main li {
+  float: left;
+  position: relative;
+  width: 150px;
+}
+
+ul li a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color: aqua;
+  text-align: center;
+  line-height: 40px;
+  color: blueviolet;
+  text-decoration: none;
+  position: relative; 
+  z-index: 1; 
+}
+
+ul li a:hover {
+  background-color: red;
+}
+
+ul#main li:hover ul {
+  display: block;
+}

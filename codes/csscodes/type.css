@@ -1,0 +1,21 @@
+
+.bar {
+  background-color: aqua;
+  overflow: hidden;
+  
+}
+
+.bar a {
+  float: center;
+  color: red;
+  border: 1px red solid;
+  border-radius: 100px;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+#shadow{
+  border: 5px;
+  color: purple;
+  border-radius: 4px;
+}

@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:green
+}
+
+.calendar {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  max-height: 600px;
+}
+
+.month {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  float: left;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  text-align: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.today {
+  background-color: #e0e0e0;
+}
+#home{
+  border-radius: 5px;
+  background-color: blueviolet;
+  width: 80px;
+  height: 40px;
+}

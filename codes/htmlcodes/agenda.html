@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda</title>
+  <link rel="stylesheet" href="/csscodes/agenda.css">
+</head>
+<body>
+  <button id="home"><a href="/1.html">Home</a></button>
+  <form action="/phpcodes/agenda.php" method="post">
+    <div class="agenda">
+      <div class="day">
+        <h2>Monday</h2>
+        <p>Date: <input type="date" name="monday_date"></p>
+        <ul>
+          <li>Meeting with Client A</li>
+          <li>Team Stand-up Meeting</li>
+        
+        </ul>
+        <input type="text" name="monday_task" placeholder="Add task">
+        <button type="button" onclick="resetDay('monday')">Reset</button>
+        <button type="button" onclick="sendDay('monday')">Send</button>
+      </div>
+      <div class="day">
+        <h2>Tuesday</h2>
+        <p>Date: <input type="date" name="tuesday_date"></p>
+        <ul>
+          <li>Project Presentation</li>
+          <li>Team Training Session</li>
+        </ul>
+        <input type="text" name="tuesday_task" placeholder="Add task">
+        <button type="button" onclick="resetDay('tuesday')">Reset</button>
+        <button type="button" onclick="sendDay('tuesday')">Send</button>
+      </div>
+      <div class="day">
+        <h2>Wednesday</h2>
+        <p>Date: <input type="date" name="wednesday_date"></p>
+        <ul>
+         
+        </ul>
+        <input type="text" name="wednesday_task" placeholder="Add task">
+        <button type="button" onclick="resetDay('wednesday')">Reset</button>
+        <button type="button" onclick="sendDay('wednesday')">Send</button>
+      </div>
+      <div class="day">
+        <h2>Thursday</h2>
+        <p>Date: <input type="date" name="thursday_date"></p>
+        <ul>
+        
+        </ul>
+        <input type="text" name="thursday_task" placeholder="Add task">
+        <button type="button" onclick="resetDay('thursday')">Reset</button>
+        <button type="button" onclick="sendDay('thursday')">Send</button>
+      </div>
+      <div class="day">
+        <h2>Friday</h2>
+        <p>Date: <input type="date" name="friday_date"></p>
+        <ul>
+         
+        </ul>
+        <input type="text" name="friday_task" placeholder="Add task">
+        <button type="button" onclick="resetDay('friday')">Reset</button>
+        <button type="button" onclick="sendDay('friday')">Send</button>
+      </div>
+      <div class="day">
+        <h2>Saturday</h2>
+        <p>Date: <input type="date" name="saturday_date"></p>
+        <ul>
+         
+        </ul>
+        <input type="text" name="saturday_task" placeholder="Add task">
+        <button type="button" onclick="resetDay('saturday')">Reset</button>
+        <button type="button" onclick="sendDay('saturday')">Send</button>
+      </div>
+      <div class="day">
+        <h2>Sunday</h2>
+        <p>Date: <input type="date" name="sunday_date"></p>
+        <ul>
+         
+        </ul>
+        <input type="text" name="sunday_task" placeholder="Add task">
+        <button type="button" onclick="resetDay('sunday')">Reset</button>
+        <button type="button" onclick="sendDay('sunday')">Send</button>
+      </div>
+    </div>
+    <div class="buttons">
+      <button type="reset">Reset All</button>
+      <button type="submit">Send All to Database</button>
+    </div>
+  </form>
+
+  <script>
+    function resetDay(day) {
+      var tasks = document.getElementsByName(day + '_task');
+      tasks.forEach(function(task) {
+        task.value = '';  
+      });
+    }
+
+    function sendDay(day) {
+      
+      var tasks = document.getElementsByName(day + '_task');
+      console.log(day + ':');
+      tasks.forEach(function(task) {
+        console.log(task.value);
+      });
+    }
+  </script>
+</body>
+</html>

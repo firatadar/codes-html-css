@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:blanchedalmond;
+    
+  }
+
+  .agenda {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .day {
+    margin-bottom: 20px;
+  }
+  
+
+  .day h2 {
+    color: #333;
+    border-bottom: 1px solid green;
+    padding-bottom: 5px;
+  }
+  
+  .day ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .day ul li {
+    margin-bottom: 5px;
+  }
+  #home{
+    width: 80px;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 5px;
+  }
+  

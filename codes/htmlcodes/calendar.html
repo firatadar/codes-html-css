@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendar Website</title>
+<link rel="stylesheet" href="/csscodes/calender.css">
+<style>
+ 
+</style>
+</head>
+<body>
+  <button id="home"><a href="/1.html">Home</a></button>
+  <div class="calendar">
+    <div class="month">
+      <span class="prev" onclick="prevMonth()">&#10094;</span>
+      <span id="currentMonth"></span>
+      <span class="next" onclick="nextMonth()">&#10095;</span>
+    </div>
+    <div class="days" id="calendarDays"></div>
+  </div>
+
+  <script>
+    var currentDate = new Date();
+    var currentMonth = currentDate.getMonth();
+    var currentYear = currentDate.getFullYear();
+    var months = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+
+    function renderCalendar() {
+      var firstDay = new Date(currentYear, currentMonth, 1);
+      var lastDay = new Date(currentYear, currentMonth + 1, 0);
+      var daysInMonth = lastDay.getDate();
+      var startingDay = firstDay.getDay();
+
+      document.getElementById("currentMonth").textContent = months[currentMonth] + " " + currentYear;
+
+      var calendarDays = document.getElementById("calendarDays");
+      calendarDays.innerHTML = "";
+
+      for (var i = 0; i < startingDay; i++) {
+        var emptyDay = document.createElement("div");
+        emptyDay.classList.add("day");
+        calendarDays.appendChild(emptyDay);
+      }
+
+      for (var i = 1; i <= daysInMonth; i++) {
+        var day = document.createElement("div");
+        day.textContent = i;
+        day.classList.add("day");
+        if (currentDate.getFullYear() === currentYear && currentDate.getMonth() === currentMonth && currentDate.getDate() === i) {
+          day.classList.add("today");
+        }
+        calendarDays.appendChild(day);
+      }
+    }
+
+    function prevMonth() {
+      if (currentMonth === 0) {
+        currentMonth = 11;
+        currentYear -= 1;
+      } else {
+        currentMonth -= 1;
+      }
+      renderCalendar();
+    }
+
+    function nextMonth() {
+      if (currentMonth === 11) {
+        currentMonth = 0;
+        currentYear += 1;
+      } else {
+        currentMonth += 1;
+      }
+      renderCalendar();
+    }
+
+    renderCalendar();
+  </script>
+</body>
+</html>
